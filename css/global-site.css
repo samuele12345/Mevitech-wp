@@ -1,0 +1,87 @@
+/*
+ * Estratto leggibile dal dump database/db-mevitech.sql.
+ * Queste regole provengono da impostazioni globali e da elementi Elementor,
+ * quindi il file serve come riferimento documentale del CSS custom trovato nel database.
+ */
+
+body {
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+footer {
+    z-index: 1;
+}
+
+#img-nera {
+    z-index: 1;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.elementor-location-footer {
+    margin-top: auto;
+}
+
+#header-div {
+    background: rgba(255, 255, 255, 0.9);
+    top: 30px;
+    position: sticky;
+    transition: background-color 1s;
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#header-div.visible,
+#header-div:hover {
+    background: #ffffff;
+    opacity: 1;
+}
+
+.mega-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    z-index: 998;
+}
+
+#dropdown-soluzioni {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+#dropdown-soluzioni.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.menu-item-1510 a,
+.butDrop {
+    cursor: pointer;
+}

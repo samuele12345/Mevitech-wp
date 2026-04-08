@@ -1,0 +1,14 @@
+{
+    "generator": "Code Snippets v3.9.5",
+    "date_created": "2026-04-08 09:58",
+    "snippets": [
+        {
+            "id": 5,
+            "name": "Dropdown Soluzioni",
+            "code": "add_action('wp_footer', function() {\n?>\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n\tconst menuLink = document.querySelector(\".menu-item-1510 a\");\n\tconst dropdown = document.querySelector(\"#dropdown-soluzioni\");\n\tconst xIcon = document.querySelector(\".butDrop\");\n\tconst headd = document.querySelector(\"#header-div\");\n\n\tif(menuLink && dropdown){\n\t\tmenuLink.addEventListener(\"click\", function(e){\n\t\t\te.preventDefault();\n\t\t\tdropdown.classList.toggle(\"open\");\n\t\t\theadd.classList.toggle(\"visible\");\n\t\t});\n\t\t\n\t\txIcon.addEventListener(\"click\", function(e){\n\t\t\te.preventDefault();\n\t\t\tdropdown.classList.remove(\"open\");\n\t\t\theadd.classList.remove(\"visible\");\n\t\t})\n\t}\n\t});\n<\/script>\n<?php\n});",
+            "active": true,
+            "modified": "2026-03-30 11:25:20",
+            "revision": "1"
+        }
+    ]
+}

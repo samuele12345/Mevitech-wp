@@ -1,0 +1,84 @@
+/*
+ * Estratto leggibile dal dump database/db-mevitech.sql.
+ * Raccoglie il CSS custom collegato ai componenti usati dagli snippet custom.
+ */
+
+.swiper {
+    pointer-events: auto;
+    cursor: grab;
+}
+
+.swiper:active {
+    cursor: grabbing;
+}
+
+#carousel {
+    gap: 45px;
+    height: 425px;
+    user-select: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+    cursor: grab;
+}
+
+#carousel::-webkit-scrollbar {
+    display: none;
+}
+
+#carousel.dragging {
+    cursor: grabbing;
+}
+
+.slides {
+    height: 425px;
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: #edeef1;
+    border-radius: 10px;
+}
+
+.text-slides {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#last-slide {
+    margin-right: 320px;
+}
+
+.div-freccia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#459ad5, #1472b1);
+    height: 39px;
+    user-select: none;
+}
+
+#but-ri {
+    cursor: pointer;
+}
+
+#div-freccia-sin {
+    margin: auto;
+}
+
+#main-div-frecce {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5%;
+}
+
+#scopri-det-govcom,
+#scopri-det-app,
+#scopri-sol-bus,
+#scopri-sol-cor,
+#scopri-sol-gov {
+    cursor: pointer;
+}

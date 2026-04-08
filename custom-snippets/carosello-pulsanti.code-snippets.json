@@ -1,0 +1,14 @@
+{
+    "generator": "Code Snippets v3.9.5",
+    "date_created": "2026-04-08 10:01",
+    "snippets": [
+        {
+            "id": 8,
+            "name": "carosello-pulsanti",
+            "code": "add_action('wp_footer', function() {\n?>\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n\tconst butRight = document.querySelector(\"#but-ri\");\n\tconst butLeft = document.querySelector(\"#but-le\");\n\tconst carousel = document.querySelector(\"#carousel\");\n\n\tif(butRight && carousel){\n\t\tbutRight.addEventListener(\"click\", () => {\n\t\t\tcarousel.scrollBy({\n\t\t\t\tleft: 220,       \n\t\t\t\tbehavior: \"smooth\" \n\t\t\t});\n\t\t});\n\t}\n\t\n\tif(butRight && carousel){\n\t\tbutLeft.addEventListener(\"click\", () => {\n\t\t\tcarousel.scrollBy({\n\t\t\t\tleft: -220,       \n\t\t\t\tbehavior: \"smooth\" \n\t\t\t});\n\t\t});\n\t}\n\n});\n<\/script>\n<?php\n});\n",
+            "active": true,
+            "modified": "2026-04-03 13:51:37",
+            "revision": "1"
+        }
+    ]
+}

@@ -31,3 +31,7 @@ dist/
 # Backups
 *.wpress
 *.sql
+database/
+
+# Notes
+guida_github_wp.md

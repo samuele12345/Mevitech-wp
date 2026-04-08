@@ -1,0 +1,14 @@
+{
+    "generator": "Code Snippets v3.9.5",
+    "date_created": "2026-04-08 10:02",
+    "snippets": [
+        {
+            "id": 9,
+            "name": "div-click",
+            "code": "add_action('wp_footer', function() {\n?>\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n\n  \tconst govcom = document.querySelector(\"#scopri-det-govcom\");\n\tconst app = document.querySelector(\"#scopri-det-app\");\n\tconst bus = document.querySelector(\"#scopri-sol-bus\");\n\tconst cor = document.querySelector(\"#scopri-sol-cor\");\n\tconst gov = document.querySelector(\"#scopri-sol-gov\");\n\n\t\n\tif(govcom){\n\t\tgovcom.addEventListener(\"click\", function(){\n\t\t\twindow.location.href = \"http:\/\/localhost\/Progetti\/Mevitech\/govcom\/\";\n\t\t});\n\t}\n\t\n\tif(app){\n\t\tapp.addEventListener(\"click\", function(){\n\t\t\twindow.location.href = \"http:\/\/localhost\/Progetti\/Mevitech\/app-hr-mevitech\/\";\n\t\t});\n\t}\n\t\n\tif(bus){\n\t\tbus.addEventListener(\"click\", function(){\n\t\t\twindow.location.href = \"http:\/\/localhost\/Progetti\/Mevitech\/soluzioni_business\/\";\n\t\t});\n\t}\n\t\n\tif(cor){\n\t\tcor.addEventListener(\"click\", function(){\n\t\t\twindow.location.href = \"http:\/\/localhost\/Progetti\/Mevitech\/soluzioni_corporate\/\";\n\t\t});\n\t}\n\t\n\tif(gov){\n\t\tgov.addEventListener(\"click\", function(){\n\t\t\twindow.location.href = \"http:\/\/localhost\/Progetti\/Mevitech\/soluzioni_governance\/\";\n\t\t});\n\t}\n\n});\n<\/script>\n<?php\n});",
+            "active": true,
+            "modified": "2026-04-03 21:17:12",
+            "revision": "1"
+        }
+    ]
+}

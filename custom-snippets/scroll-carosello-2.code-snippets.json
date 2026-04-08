@@ -1,0 +1,14 @@
+{
+    "generator": "Code Snippets v3.9.5",
+    "date_created": "2026-04-08 10:01",
+    "snippets": [
+        {
+            "id": 7,
+            "name": "scroll carosello 2",
+            "code": "add_action('wp_footer', function() {\n?>\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", function () {\n\n  const slider = document.querySelector(\"#carousel\");\n\n  if (!slider) return;\n\n  let isDown = false;      \/\/ indica se il mouse \u00e8 premuto\n  let startX;              \/\/ posizione iniziale del mouse\n  let scrollLeft;          \/\/ scroll iniziale del div\n\n  \/\/ quando premi il mouse sul carosello\n  slider.addEventListener(\"mousedown\", (e) => {\n    isDown = true;\n    slider.classList.add(\"dragging\");\n    startX = e.pageX - slider.offsetLeft;\n    scrollLeft = slider.scrollLeft;\n  });\n\n  \/\/ quando esci dal carosello\n  slider.addEventListener(\"mouseleave\", () => {\n    isDown = false;\n    slider.classList.remove(\"dragging\");\n  });\n\n  \/\/ quando rilasci il mouse\n  slider.addEventListener(\"mouseup\", () => {\n    isDown = false;\n    slider.classList.remove(\"dragging\");\n  });\n\n  \/\/ movimento del mouse mentre tieni premuto\n  slider.addEventListener(\"mousemove\", (e) => {\n    if (!isDown) return;\n    e.preventDefault();\n\n    const x = e.pageX - slider.offsetLeft;\n    const walk = (x - startX) * 1.5; \/\/ velocit\u00e0 trascinamento\n    slider.scrollLeft = scrollLeft - walk;\n  });\n\n});\n<\/script>\n<?php\n});",
+            "active": true,
+            "modified": "2026-04-07 09:01:22",
+            "revision": "1"
+        }
+    ]
+}
